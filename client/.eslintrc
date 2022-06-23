@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "react-app",
+        "react-app/jest"
+    ],
+    "rules": {
+        "constructor-super": "error",
+        "no-alert": "error",
+        "no-var": "error",
+        "jsx-quotes": ["error", "prefer-double"]
+    }
+}
