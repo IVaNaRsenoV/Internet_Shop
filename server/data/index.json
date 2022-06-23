@@ -1,0 +1,114 @@
+{
+    "data": [
+        {
+            "products": [
+                {
+                    "notebook": [
+                        {
+                            "id": 1,
+                            "name": "lenovo",
+                            "cost": 30000
+                        },
+                        {
+                            "id": 2,
+                            "name": "acer",
+                            "cost": 25000
+                        },
+                        {
+                            "id": 3,
+                            "name": "macbook",
+                            "cost": 40000
+                        },
+                        {
+                            "id": 4,
+                            "type": "notebbook",
+                            "name": "macbook pro",
+                            "cost": 80000
+                        },
+                        {
+                            "id": 5,
+                            "name": "thinkPad lenovo",
+                            "cost": 24000
+                        }
+                    ]
+                },
+                {
+                    "TV": [
+                        {
+                            "id": 1,
+                            "name": "Veko",
+                            "cost": 5000
+                        },
+                        {
+                            "id": 2,
+                            "name": "Apple",
+                            "cost": 12000
+                        },
+                        {
+                            "id": 3,
+                            "name": "Lenovo",
+                            "cost": 10000
+                        }
+                    ]
+                }
+            ],
+            "personal": [
+                {
+                    "worker": [
+                        {
+                        "id": 1,
+                        "role": "Manager",
+                        "name": "Natasha",
+                        "username": "Rebkova",
+                        "experience": 2,
+                        "age": 28
+                    },
+                    {
+                        "id": 2,
+                        "role": "Manager",
+                        "name": "Sneshana",
+                        "username": "Borisovna",
+                        "experience": 10,
+                        "age": 42
+                    },
+                    {
+                        "id": 3,
+                        "role": "Dealer",
+                        "name": "Moloco",
+                        "username": "Materi",
+                        "experience": 14,
+                        "age": 50
+                    },
+                    {
+                        "id": 4,
+                        "role": "Dealer",
+                        "name": "Muchamed",
+                        "username": "Ali",
+                        "experience": 5,
+                        "age": 4
+                    }
+                ],
+                "manager": [
+                    {
+                        "id": 1,
+                        "role": "Owner",
+                        "name": "Boroda",
+                        "username": "Fullstackovich",
+                        "experience": 20,
+                        "age": 54
+                    },
+                    {
+                        "id": 2,
+                        "role": "Technical director",
+                        "name": "Cheep",
+                        "username": "Cheepovich",
+                        "experience": 15,
+                        "age": 45
+                    }
+                ]
+                }
+            ],
+            "customer": []
+        }
+    ]
+}
