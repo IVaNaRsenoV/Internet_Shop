@@ -1,18 +1,12 @@
-import React, { useEffect } from "react";
-import { connect, useDispatch } from "react-redux";
-import selector from "./redux/selector";
-import { fetchCustomers } from "./redux/asyncFunc";
+import React from "react";
+import Products from "./Pages/Products";
 
-const App = (props) => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCustomers());
-    console.log(selector, " selector");
-  }, []);
-
-  console.log(props);
-  return <div className="sdf"></div>;
+const App = () => {
+  return (
+    <div>
+      <Products />
+    </div>
+  );
 };
 
-export default connect((state) => state)(App);
+export default App;

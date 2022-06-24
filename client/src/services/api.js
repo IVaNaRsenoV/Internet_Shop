@@ -9,8 +9,6 @@ async function api(url, method, data, headers) {
     });
     return await response.json();
   } catch (err) {
-    //обработать ошибки по статус кодам тут
-    //вывести сообщение попап и тд
     console.log(err);
   }
 }
