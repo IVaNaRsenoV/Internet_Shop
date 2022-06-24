@@ -5,11 +5,11 @@ export const Button = ({ endpoint, name }) => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data);
 
-  const getInfo = (event) => {
+  console.log(data);
+
+  const getInfo = async (event) => {
     event.preventDefault();
-    dispatch(fetchData(`${endpoint}?type=${name}`));
-    let test = data.filter(({ type }) => type === name);
-    console.log(test);
+    await dispatch(fetchData(`${endpoint}?type=${name}`));
   };
 
   return <button onClick={getInfo}>{name}</button>;
