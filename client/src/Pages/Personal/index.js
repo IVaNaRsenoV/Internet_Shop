@@ -6,15 +6,15 @@ import { Button } from "../../components";
 const Products = ({ data }) => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchData("products"));
+    dispatch(fetchData("personal"));
   }, []);
 
   if (data.length > 0) console.log(data);
 
   return (
     <>
-      <Button name={"notebook"} endpoint={"products"} />
-      <Button name={"TV"} endpoint={"products"} />
+      <Button name={"worker"} endpoint={"personal"} />
+      <Button name={"manager"} endpoint={"personal"} />
     </>
   );
 };

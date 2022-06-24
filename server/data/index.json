@@ -1,8 +1,8 @@
 {
-    "data": [
-        {
+    
             "products": [
                 {
+                    "type": "notebook",
                     "notebook": [
                         {
                             "id": 1,
@@ -33,6 +33,7 @@
                     ]
                 },
                 {
+                    "type": "TV",
                     "TV": [
                         {
                             "id": 1,
@@ -54,6 +55,7 @@
             ],
             "personal": [
                 {
+                    "type": "worker",
                     "worker": [
                         {
                         "id": 1,
@@ -87,7 +89,10 @@
                         "experience": 5,
                         "age": 4
                     }
-                ],
+                ]
+            },
+            {
+                "type": "manager",
                 "manager": [
                     {
                         "id": 1,
@@ -106,9 +111,7 @@
                         "age": 45
                     }
                 ]
-                }
+            }
             ],
             "customer": []
-        }
-    ]
 }

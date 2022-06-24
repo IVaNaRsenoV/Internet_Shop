@@ -1,24 +1,30 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import api from "../../services/api";
 
-const url = "http://localhost:3001/data";
+const url = "http://localhost:3001/";
 const initialState = {
   data: [],
+  status: null,
 };
 
-export const fetchData = createAsyncThunk("toolkit/fetchData", async () =>
-  api(url, "GET")
-);
+export const fetchData = createAsyncThunk("toolkit/fetchData", async (path) => {
+  return api(url + path, "GET");
+});
 
 const toolkitReducer = createSlice({
   name: "toolkit",
   initialState,
   extraReducers: {
-    [fetchData.pending]: () => console.log("pending"),
+    [fetchData.pending]: (state) => {
+      state.status = "loading";
+    },
     [fetchData.fulfilled]: (state, action) => {
+      state.status = "resolved";
       state.data = action.payload;
     },
-    [fetchData.rejected]: () => console.log("rejected"),
+    [fetchData.rejected]: () => {
+      console.log("rejected");
+    },
   },
 });
 
