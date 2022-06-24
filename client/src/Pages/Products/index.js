@@ -1,15 +1,14 @@
 import React, { useEffect } from "react";
-import { connect, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { fetchData } from "../../redux/toolkitReducer";
 import { Button } from "../../components";
 
-const Products = ({ data }) => {
+const Products = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(fetchData("products"));
   }, []);
-
-  if (data.length > 0) console.log(data);
 
   return (
     <>
@@ -19,10 +18,4 @@ const Products = ({ data }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    data: state.data,
-  };
-};
-
-export default connect(mapStateToProps)(Products);
+export default Products;
